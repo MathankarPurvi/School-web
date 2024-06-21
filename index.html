@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ujwalatai Pawar School, Chhatrapati Sambhajinagar</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
-        img{
-            width: 100%;
-        }
-        .log{
-            width: 15vh;
-        }
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content:space-around ;
-            gap: 20px;
-        }
+      body {
+        background-color: rgba(255, 255, 0, 0.12);
+      }
+      img {
+        width: 100%;
+      }
+      .log {
+        width: 15vh;
+      }
 
-        .nav{
-            color: black;
-            font-size: large;
-            font-family: sans-serif;
-            display: flex;
-            gap: 20px;
-            background-color: #00d9ff8a;
-        
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: large;
-            font-weight: bolder;
+      .name{
+        font-family: sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+        color: cornflowerblue;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+      }
 
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: bolder;
+      }
+      .heading{
+        display: block;
+      }
+
+      @media (max-width: 650px) {
+        nav {
+          flex-direction: column;
         }
-        
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-       <div class="logo">
-        <img src="assets/logo.png" alt="logo" class="log"> 
-       </div>
-       <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="#">Abous Us</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Board of Committee</a>
-       </div>
+      <div class="logo">
+        <img
+          src="assets/logo-removebg-preview (2).png"
+          alt="logo"
+          class="log"
+        />
+      </div>
+      <div class="heading">
+        <h2>Bayjai Education Trust, Chhatrapati Sambhajinagar</h2>
+        <h1 class="name">Ujwalatai Pawar School</h1>
+      </div>
+      <h1 class="name">Ujwalatai Pawar School</h1>
     </nav>
-    <hr>
-    <img src="assets/school!.jpg" alt="school image">
     
-</body>
+    <img src="assets/school!.jpg" alt="school image" />
+  </body>
 </html>
