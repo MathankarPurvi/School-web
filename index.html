@@ -25,7 +25,8 @@
     body {
       background-color: rgba(255, 255, 0, 0.12);
     }
-    .container{
+
+    .container {
       width: 100%;
     }
 
@@ -66,40 +67,65 @@
     .heading {
       display: block;
     }
+
     .bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: #883576 !important;
+      --bs-bg-opacity: 1;
+      background-color: #883576 !important;
     }
-    .nav-link{
+
+    .nav-link {
       color: white;
       font-family: sans-serif;
       font-weight: 700;
       font-size: 20px;
     }
-    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #ffffff;
-    font-family: sans-serif;
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+      color: #ffffff;
+      font-family: sans-serif;
       font-weight: 700;
       font-size: 20px;
     }
-    .collapse{
+
+    .collapse {
       justify-content: center;
     }
-     .navbar-toggler{
-      background-color: #ffffff;
-     }
 
-     .navbar-nav{
+    .navbar-toggler {
+      background-color: #ffffff;
+    }
+
+    .navbar-nav {
       gap: 25px;
-     }
+    }
+    .mainn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+    background-color: #883576;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 21px;
+    border-radius: 10px;
+    padding: 12px;
+    width: 60%;
+    }
+    
     @media (max-width: 650px) {
       .uper {
         flex-direction: column;
         margin-right: 0;
       }
-      .container-fluid{
-      justify-content: flex-end;
-    }
+
+      .container-fluid {
+        justify-content: flex-end;
+      }
 
       .heading {
         display: flex;
@@ -122,48 +148,56 @@
         top: 87%;
         left: 10%;
       }
-      .nav-link{
+
+      .nav-link {
         font-size: 15px;
       }
-      .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-      font-size: 15px;
-    }
-    .navbar-nav{
-      gap: 1px;
-    }
+
+      .navbar-nav .nav-link.active,
+      .navbar-nav .nav-link.show {
+        font-size: 15px;
+      }
+
+      .navbar-nav {
+        gap: 1px;
+      }
+      .content{
+        width: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
-    <div class="uper">
-      <div class="logo">
-        <img src="assets/logoji-removebg-preview.png" alt="logo" class="log" />
-      </div>
-      <div class="heading">
-        <h2 class="trust">
-          Bayjai Education Trust, Chhatrapati Sambhajinagar
-        </h2>
-        <h1 class="name">Ujwalatai Pawar School</h1>
-      </div>
+  <div class="uper">
+    <div class="logo">
+      <img src="assets/logoji-removebg-preview.png" alt="logo" class="log" />
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
-      <div class="container-fluid" style="justify-content: flex-end;">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav" style="align-items: center;" >
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About us</a>
-            <a class="nav-link" href="#">Board of Director</a>
-            <a class="nav-link" href="#">Gallery</a>
-            <a class="nav-link" href="#">Contact us</a>
-          </div>
+    <div class="heading">
+      <h2 class="trust">
+        Bayjai Education Trust, Chhatrapati Sambhajinagar
+      </h2>
+      <h1 class="name">Ujwalatai Pawar School</h1>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="justify-content: flex-end;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="align-items: center;">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="#">Board of Director</a>
+          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="#">Contact us</a>
         </div>
       </div>
-    </nav>
-  
+    </div>
+  </nav>
+
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -176,14 +210,29 @@
         <img src="assets/class!.jpg" class="d-block w-100" alt="class">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+  <div class="mainn">
+  <div class="content">
+    <h1 class="nameji">
+      Welcome to Ujwalatai Pawar School
+    </h1>
+    <p class="about">
+      Ujwalatai Pawar CBSE School is runned by Bayjai Bahuuddeshiya Sevabhavi Shikshan Sanstha established in 2003. It
+      is located in Satara Parisar, among this among cheerful enviorment we welcome you to join us on the journey to
+      make study easier and enjoyabale for the students.
+    </p>
+    <button class="direct" type="button"><a href="aboutus.html">Read more</a></button>
+  </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
