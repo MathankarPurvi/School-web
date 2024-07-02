@@ -111,12 +111,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 21px;
-    border-radius: 10px;
-    padding: 12px;
-    width: 60%;
+    padding-left : 20vw;
+    padding-right: 20vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    }
+
+    .nameji{
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    .about{
+      font-size: 18px;
     }
     
+    .abouti{
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .direct{
+      border: 1px solid #ffffff;
+      background-color: #883576;
+      padding: 10px;
+      border-radius: 7px;
+    }
     @media (max-width: 650px) {
       .uper {
         flex-direction: column;
@@ -161,10 +182,22 @@
       .navbar-nav {
         gap: 1px;
       }
-      .content{
-        width: 100%;
-      }
+      .content {
+    background-color: #883576;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 21px;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+  
     }
+    
+  }
   </style>
 </head>
 
@@ -227,11 +260,11 @@
       Welcome to Ujwalatai Pawar School
     </h1>
     <p class="about">
-      Ujwalatai Pawar CBSE School is runned by Bayjai Bahuuddeshiya Sevabhavi Shikshan Sanstha established in 2003. It
-      is located in Satara Parisar, among this among cheerful enviorment we welcome you to join us on the journey to
+      Ujwalatai Pawar School is runned by "Bayjai Bahuuddeshiya Sevabhavi Shikshan Sanstha" established in 2003. It
+      is located in Satara Parisar, among this cheerful enviorment we welcome you to join us on the journey to
       make study easier and enjoyabale for the students.
     </p>
-    <button class="direct" type="button"><a href="aboutus.html">Read more</a></button>
+    <button class="direct" type="button"><a href="aboutus.html" class="abouti">Read more</a></button>
   </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
