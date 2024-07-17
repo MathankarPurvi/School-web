@@ -16,6 +16,44 @@
   body {
     background-color: rgba(255, 255, 0, 0.12);
   }
+  .container {
+    width: 100%;
+  }
+
+  .log {
+    width: 15vh;
+  }
+
+  .trust {
+    font-size: 20px;
+    font-weight: 600;
+    color: saddlebrown;
+    text-align: center;
+  }
+
+  .name {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #1363AD;
+
+    text-align: center;
+  }
+
+  .uper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin-right: 90px;
+    padding-top: 20px;
+    margin: 10px;
+  }
+
+  .heading {
+    display: block;
+  }
+
     .nav-link {
     color: white;
     font-family: sans-serif;
@@ -46,10 +84,66 @@
   .navbar-nav {
     gap: 25px;
   }
+  @media (max-width: 650px) {
+    .uper {
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    .container-fluid {
+      justify-content: flex-end;
+    }
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .trust {
+      margin-right: 0;
+      font-size: 15px;
+    }
+
+    .name {
+      margin-left: 0;
+      font-size: 35px;
+    }
+
+    .main {
+      position: absolute;
+      top: 87%;
+      left: 10%;
+    }
+
+    .nav-link {
+      font-size: 15px;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+      font-size: 15px;
+    }
+
+    .navbar-nav {
+      gap: 1px;
+    }
+  }
 
 
 </style>
 <body>
+  <div class="uper">
+    <div class="logo">
+      <img src="assets/logoji-removebg-preview.png" alt="logo" class="log" />
+    </div>
+    <div class="heading">
+      <h2 class="trust">
+        Bayjai Education Trust, Chhatrapati Sambhajinagar
+      </h2>
+      <h1 class="name">Ujwalatai Pawar School</h1>
+    </div>
+  </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" style="justify-content: flex-end;">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
