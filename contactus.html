@@ -84,6 +84,17 @@
   .navbar-nav {
     gap: 25px;
   }
+
+  .contact{
+    margin: 20px;
+    display: flex;
+    justify-content:flex-start;
+  }
+  .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
   @media (max-width: 650px) {
     .uper {
       flex-direction: column;
@@ -167,25 +178,25 @@
           <div class="input-row">
             <div class="input-column">
               <label>Name</label>
-              <input type="text">
-            </div>
-          </div>
-          <div class="input-row">
-            <div class="input-column">
-              <label>Phone Number</label>
-              <input type="text">
+              <input type="text" placeholder="John Bash">
             </div>
           </div>
           <div class="input-row">
             <div class="input-column">
               <label>Email</label>
-              <input type="email">
+              <input type="email" placeholder="XYZ@gmail.com">
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-column">
+              <label>Subject</label>
+              <input type="text" placeholder="Your subject here">
             </div>
           </div>
           <div class="input-row">
             <div class="input-column">
               <label>Message</label>
-              <input type="text">
+              <input type="text" placeholder="Tell us what's on your mind">
             </div>
           </div>
         </form>
