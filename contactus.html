@@ -95,6 +95,26 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
+  input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+  }
+  .containn{
+    display: flex;
+    gap: 20px;
+  }
+
   @media (max-width: 650px) {
     .uper {
       flex-direction: column;
@@ -175,30 +195,27 @@
       </nav>
       <div class="contact">
         <form>
+          <div class="containn">
           <div class="input-row">
             <div class="input-column">
-              <label>Name</label>
-              <input type="text" placeholder="John Bash">
+              
+              <input type="text" placeholder="Your Name">
             </div>
           </div>
           <div class="input-row">
             <div class="input-column">
-              <label>Email</label>
-              <input type="email" placeholder="XYZ@gmail.com">
+            
+              <input type="email" placeholder="Your Email">
             </div>
           </div>
+        </div>
           <div class="input-row">
             <div class="input-column">
-              <label>Subject</label>
-              <input type="text" placeholder="Your subject here">
+        
+              <input type="text" placeholder="Subject">
             </div>
           </div>
-          <div class="input-row">
-            <div class="input-column">
-              <label>Message</label>
-              <input type="text" placeholder="Tell us what's on your mind">
-            </div>
-          </div>
+          <textarea rows="5" placeholder="Message"></textarea>
         </form>
       </div>
       <div class="container">
