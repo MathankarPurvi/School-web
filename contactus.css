@@ -190,5 +190,8 @@
     .input-row{
       display: block;
     }
+    .container{
+        text-align: center;
+    }
 
   }
