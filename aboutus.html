@@ -12,11 +12,19 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+
+  /* .aboutus_body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  } */
 
 
     body {
@@ -120,6 +128,10 @@
       font-size: 17px;
       font-weight: 600;
     }
+    .chairman{
+      font-weight: 700;
+      text-align: center;
+    }
 
     .president {
       box-shadow: rgba(99, 99, 99, 0.305) 0px 2px 8px 0px;
@@ -133,7 +145,7 @@
 
     .desk {
       
-      box-shadow: rgba(99, 99, 99, 0.305);
+      filter: drop-shadow(5px 5px 6px #707070);
 
     }
 
@@ -145,6 +157,37 @@
     .Desk {
       font-family: "Poppins";
       text-align: center;
+      font-weight: 700;
+    }
+    .pledge{
+      margin-left: 40px;
+    }
+    .pledgee{
+     width: 75%;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      filter: drop-shadow(5px 5px 6px #d9d8d8);
+      position: relative;
+      margin: 20px;
+      padding: 20px;
+    }
+    .mission{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .misssion{
+      font-weight: 700;
+      font-family: "Poppins";
+      text-align: center;
+    }
+    .vision{
+      margin: 20px;
+      padding: 20px;
+    }
+    .points{
+      font-weight: 400;
+      font-family: sans-serif;
+      font-size: 17px;
     }
 
     @media (max-width: 650px) {
@@ -256,7 +299,7 @@
 
 </head>
 
-<body>
+<body class="aboutus_body">
   <div class="uper">
     <div class="logo">
       <img src="assets/logoji-removebg-preview.png" alt="logo" class="log" />
@@ -320,6 +363,28 @@
     </div>
   </div>
 <hr>
+<div class="mission">
+  <div class="pledge" data-aos="fade-right" data-aos-duration="1000"
+  data-aos-easing="ease-in-sine">
+    <img src="assets/pledge.jpg" alt="students" class="pledgee">
+  </div>
+  <div class="vision" data-aos="fade-left"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-sine">
+    <h2 class="misssion" >Vission Mission</h2><br><br>
+    <h3>Our Vision </h3>
+    <p>"Our vision is to nurture well-rounded individuals who are critical thinkers, responsible citizens, and confident in their abilities to shape a better future."</p>
+    <h3>Our Mission</h3>
+    <p>"At Ujwalatai Pawar School, our mission is to create an inclusive learning environment that fosters curiosity, creativity, and a lifelong passion for learning."</p>
+    <br>
+    <p>We achieve this mission through the following principles:</p>
+    <li class="points">Equipping students with essential life skills to face the challenges of tomorrow.</li>
+    <li class="points">Cultivating values of honesty, compassion, and perseverance.</li>
+    <li class="points">Encouraging students to discover and enhance their unique talents.</li>
+    <li class="points">Promoting a strong sense of responsibility towards family, community, and the nation.</li>
+    <li class="points">Engaging students in active learning experiences that make the curriculum both relevant and exciting.</li>
+  </div>
+</div>
   <div class="containerrr">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
 
