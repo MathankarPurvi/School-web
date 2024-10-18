@@ -90,7 +90,7 @@
       <span id="closeChatbot">&times;</span>
     </div>
     <div class="chatbot-content">
-      <p>Hello! How can I help you?</p>
+      <p>Hello! Tell us your experience</p>
       <!-- Chatbot content will go here -->
     </div>
     <div class="chatbot-footer">
@@ -204,6 +204,37 @@
   <script>
     AOS.init();
   </script>
+<script>
+  document.querySelector('.query').addEventListener('submit', function(event) {
+    // Prevent the form from submitting
+    event.preventDefault();
+
+    // Get form values
+    const name = document.querySelector('input[placeholder="Your Name"]').value.trim();
+    const email = document.querySelector('input[placeholder="Your Email"]').value.trim();
+    const subject = document.querySelector('input[placeholder="Subject"]').value.trim();
+    const message = document.querySelector('textarea[placeholder="Message"]').value.trim();
+
+    // Check if any required field is empty and show specific error messages
+    if (!name) {
+      alert('Please fill in your name.');
+    } else if (!email) {
+      alert('Please fill in your email.');
+    } else if (!subject) {
+      alert('Please fill in the subject.');
+    } else if (!message) {
+      alert('Please fill in the message.');
+    } else {
+      alert('Your message has been sent!');
+      // Optional: Reset the form if needed
+      document.querySelector('.query').reset();
+    }
+  });
+</script>
+
+
+  
+  
 </body>
 
 </html>
